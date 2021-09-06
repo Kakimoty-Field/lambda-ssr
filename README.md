@@ -131,7 +131,7 @@ var Buffer = require("buffer").Buffer;
 async function getTemplateBufferFromS3(pageId)
 {
     var params = {
-      Bucket : "mics-uketsuke-kun", // 追々環境変数から？
+      Bucket : "", // ご自身のバゲット名を指定
       Key : `view/${pageId}.ejs`
     };
     
